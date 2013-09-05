@@ -1,0 +1,39 @@
+{
+  "name": "wgetjs",
+  "version": "0.1.0", 
+  "description": "Ultra simple async retrieval of remote files over http or https",
+  "main": "wget.js",
+  "scripts": {
+    "test": "mocha -R list test/*.js",
+    "TESTS.md": "mocha -R markdown test/*.js > TESTS.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angleman/wgetjs.git"
+  },
+  "keywords": [
+    "curl",
+    "wget",
+    "download",
+    "file",
+    "http",
+    "https"
+  ],
+  "author": "angleman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angleman/wgetjs/issues"
+  },
+  "engines" : { 
+    "node" : ">=0.8.0" 
+  },
+  "dependencies": {
+    "request": "~2.27.0"
+  },
+  "devDependencies": {
+     "grunt": "0.4.x",
+     "grunt-bump": "0.0.x",
+     "mocha": "~1.12.0",
+     "should": "~1.2.2"
+   }
+}
