@@ -12,15 +12,35 @@ npm install wgetjs
 ## Usage
 
 ```
-var wget = require('wgetjs');  //
-var url  = 'https://raw.github.com/angleman/wgetjs/master/angleman.png';
+var wget = require('wgetjs');
 
-wget(url);               // will save angleman.png in the current path
-wget(url, function() {
-	console.log('Done'); // take some action when wget has finished
-});
+wget(url);
+
+wget(url, callback);
+
+wget({url: url, dest: destination_folder_or_filename}, callback);
 ```
 
-__TODO: if callback is omitted, do this as a sync operation__
+## Examples
+
+```
+var wget = require('wgetjs');
+
+wget('https://raw.github.com/angleman/wgetjs/master/angleman.png');   // angleman.png saved to current folder
+
+wget({
+		url:  'https://raw.github.com/angleman/wgetjs/master/package.json',
+		dest: '/tmp/' // destination path or path with filenname, default is ./
+	},
+	function (error, response, body) {
+		if (error) {
+			console.log(error);            // error encountered
+		} else {
+			console.log(response.headers); // response headers
+			console.log(body);             // content of package
+		}
+	}
+);
+```
 
 ## License: MIT
