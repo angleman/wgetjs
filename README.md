@@ -13,12 +13,14 @@ npm install wgetjs
 
 ```
 var wget = require('wgetjs');  //
-var url  = 'http://somedomain.org/someimage.png';
+var url  = 'https://raw.github.com/angleman/wgetjs/master/angleman.png';
 
-wget(url);  // will save someimage.png in the current path. TODO: if callback is omitted, do this as a sync operation
+wget(url);               // will save angleman.png in the current path
 wget(url, function() {
 	console.log('Done'); // take some action when wget has finished
 });
 ```
+
+__TODO: if callback is omitted, do this as a sync operation__
 
 ## License: MIT
