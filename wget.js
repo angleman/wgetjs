@@ -1,6 +1,5 @@
 var fs      = require('fs')
   , request = require('request')
-  , sync    = require('synchronize')
 ;
 
 function wget(options, cb) {
