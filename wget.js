@@ -1,5 +1,6 @@
 var fs      = require('fs')
   , request = require('request')
+  , sync    = require('synchronize')
 ;
 
 function wget(options, cb) {
@@ -15,6 +16,9 @@ function wget(options, cb) {
 	file         = parts[0];
 	parts        = file.split('#');
 	file         = parts[0];
+	if (options.dest && options.dest.substr(options.dest.length-1,1) == '/') { // append name if path passed
+		options.dest = options.dest + file;
+	}
 	options.dest = options.dest || file;
 
 	request(options, cb).pipe(fs.createWriteStream(options.dest));
