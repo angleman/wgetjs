@@ -1,6 +1,6 @@
 {
   "name": "wgetjs",
-  "version": "0.1.2", 
+  "version": "0.1.3", 
   "description": "Ultra simple async retrieval of remote files over http or https",
   "main": "wget.js",
   "scripts": {
