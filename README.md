@@ -11,7 +11,7 @@ npm install wgetjs
 
 ## Usage
 
-```
+```javascript
 var wget = require('wgetjs');
 
 wget(url);
@@ -23,7 +23,7 @@ wget({url: url, dest: destination_folder_or_filename}, callback);
 
 ## Examples
 
-```
+```javascript
 var wget = require('wgetjs');
 
 wget('https://raw.github.com/angleman/wgetjs/master/angleman.png');   // angleman.png saved to current folder
