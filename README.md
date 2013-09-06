@@ -19,6 +19,8 @@ wget(url);
 wget(url, callback);
 
 wget({url: url, dest: destination_folder_or_filename}, callback);
+
+wget({url: url, dry: true}); // dry run, nothing loaded, callback passing parsed options as data
 ```
 
 ## Examples
@@ -42,6 +44,14 @@ wget({
 		}
 	}
 );
+
+// dry run
+wget({
+	url: 'https://google.com',
+	dry: true
+}, function(err, res, data) {
+	console.log(data);
+})
 ```
 
 ## License: MIT
