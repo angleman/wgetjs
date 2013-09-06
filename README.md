@@ -30,7 +30,8 @@ wget('https://raw.github.com/angleman/wgetjs/master/angleman.png');   // anglema
 
 wget({
 		url:  'https://raw.github.com/angleman/wgetjs/master/package.json',
-		dest: '/tmp/' // destination path or path with filenname, default is ./
+		dest: '/tmp/',      // destination path or path with filenname, default is ./
+		timeout: 2000       // duration to wait for request fulfillment in milliseconds, default is 2 seconds
 	},
 	function (error, response, body) {
 		if (error) {
