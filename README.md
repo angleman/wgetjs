@@ -50,7 +50,7 @@ wget({
 	url: 'https://google.com',
 	dry: true
 }, function(err, res, data) {
-	console.log(data);
+	console.log(data.dest); // '/tmp/package.json'
 })
 ```
 
