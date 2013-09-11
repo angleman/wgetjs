@@ -55,3 +55,7 @@ wget({
 ```
 
 ## License: MIT
+
+Dependencies:
+
+[![request](http://badgr.co/apache*/request.png?bg=%23339e00 "request@2.27.0")](http://github.com/mikeal/request)
