@@ -31,11 +31,11 @@
     "request": "~2.27.0"
   },
   "devDependencies": {
-     "license-md": "~0.1.12",
-     "grunt":      "~0.4.1",
-     "grunt-bump": "~0.0.11",
+     "license-md":    "~0.2.5",
+     "grunt":         "~0.4.1",
+     "grunt-bump":    "~0.0.11",
      "grunt-license": "~0.1.4",
-     "mocha":      "~1.12.0",
-     "should":     "~1.2.2"
+     "mocha":         "~1.12.0",
+     "should":        "~1.2.2"
    }
 }
