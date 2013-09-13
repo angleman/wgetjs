@@ -1,5 +1,5 @@
 var fs      = require('fs')
-  , request = require('request')
+  , request = require('request') // mikeal/request
 ;
 
 
