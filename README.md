@@ -47,10 +47,12 @@ wget({
 
 // dry run
 wget({
-	url: 'https://google.com',
+	url: 'https://raw.github.com/angleman/wgetjs/master/package.json',
+	dest: '/tmp/',
 	dry: true
-}, function(err, res, data) {
-	console.log(data.dest); // '/tmp/package.json'
+	}, function(err, data) {        // data: { headers:{...}, filepath:'...' }
+		console.log(data.filepath); // '/tmp/package.json'
+	}
 })
 ```
 
