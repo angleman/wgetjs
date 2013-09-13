@@ -24,26 +24,30 @@ function wget(options, callback) {
 
 
 	function handle_request_callback(err, res, body) {
-		var data = {
-			filepath: options.dest
-		};
-		if (res && res.headers) {
-			data.headers = res.headers
-		}
-		if (callback) {
+		if (err) {
+			callback(err);
+		} else {
+			var data = {
+				filepath: options.dest
+			};
+			if (res && res.headers) {
+				data.headers = res.headers
+			}
 			callback(err, data);
 		}
 	}
 
 
 	if (options.dry) {
-		handle_request_callback();
+		handle_request_callback(null, {}, { filepath: options.dest });
 		return options.dest;
 	} else {
-		request(options, handle_request_callback).pipe(fs.createWriteStream(options.dest));
+		try {
+			request(options, handle_request_callback).pipe(fs.createWriteStream(options.dest));
+		} catch (err) {
+			callback(err);
+		}
 	}
-
-
 }
 
 module.exports = wget;
