@@ -1,6 +1,6 @@
 {
   "name": "wgetjs",
-  "version": "0.3.2", 
+  "version": "0.3.3",
   "description": "Ultra simple async retrieval of remote files over http or https",
   "main": "wget.js",
   "scripts": {
@@ -24,18 +24,18 @@
   "bugs": {
     "url": "https://github.com/angleman/wgetjs/issues"
   },
-  "engines" : { 
-    "node" : ">=0.8.0" 
+  "engines": {
+    "node": ">=0.8.0"
   },
   "dependencies": {
     "request": "~2.27.0"
   },
   "devDependencies": {
-     "license-md":    "~0.2.5",
-     "grunt":         "~0.4.1",
-     "grunt-bump":    "~0.0.11",
-     "grunt-license": "~0.1.4",
-     "mocha":         "~1.12.0",
-     "should":        "~1.2.2"
-   }
+    "license-md": "~0.2.5",
+    "grunt": "~0.4.1",
+    "grunt-bump": "~0.0.11",
+    "grunt-license": "~0.1.4",
+    "mocha": "~1.12.0",
+    "should": "~1.2.2"
+  }
 }
