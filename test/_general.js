@@ -36,7 +36,7 @@ describe('wgetjs', function() {
 
         var flag = false;
         var url  = src_url;
-        var holderr, holdres, holddata;
+        var holderr, holdres, holddata = undefined;
 
         beforeEach(function(done){
             this.timeout(15 * 60 * 1000); // give it 15 seconds instead of 2
@@ -49,7 +49,7 @@ describe('wgetjs', function() {
 
         });   
 
-        it("load " + dst_path + " from " + src_url, function(){    
+        it("load " + dst_path + " from " + src_url, function(){
             should.not.exist(holderr);
             should.exist(holddata);
             should.exist(holddata.filepath);
