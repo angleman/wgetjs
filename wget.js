@@ -1,5 +1,5 @@
-var fs      = require('fs')
-  , request = require('request') // mikeal/request
+var fs      = require('fs'),
+   request = require('request') // mikeal/request
 ;
 
 
@@ -9,9 +9,9 @@ function wget(options, callback) {
 	}
 	options      = options  || {};
 	callback     = callback || function (){};
-	var src      = options.url || options.uri || options.src
-	  , parts    = src.split('/')
-	  , file     = parts[parts.length-1]
+	var src      = options.url || options.uri || options.src,
+	    parts    = src.split('/'),
+	    file     = parts[parts.length-1]
 	;
 	parts        = file.split('?');
 	file         = parts[0];
@@ -31,9 +31,9 @@ function wget(options, callback) {
 				filepath: options.dest
 			};
 			if (res && res.headers) {
-				data.headers = res.headers
+				data.headers = res.headers;
 			}
-			callback(err, data);
+			callback(err, data, body);
 		}
 	}
 
