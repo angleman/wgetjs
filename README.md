@@ -58,4 +58,30 @@ wget({
 );
 ```
 
+## CLI
+
+Install:
+
+```bash
+$ npm install -g wgetjs
+```
+
+Use:
+
+```text
+Usage: wget [options] [url]...
+
+Ultra simple async retrieval of remote files over http or https
+
+Options:
+
+  -h, --help           output usage information
+  -v, --version        output version number
+
+Usage:
+
+# Download file
+$ wget https://github.com/NodeOS/NodeOS/archive/master.zip
+```
+
 ## License: MIT
