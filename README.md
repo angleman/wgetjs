@@ -69,19 +69,23 @@ $ npm install -g wgetjs
 Use:
 
 ```text
-Usage: wget [options] [url]...
+Usage: wget [options] <url>
 
 Ultra simple async retrieval of remote files over http or https
 
 Options:
 
-  -h, --help           output usage information
-  -v, --version        output version number
+  -h, --help                        output usage information
+  -v, --version                     output version number
+  -d, --destination <folder>        specify download destination
 
 Usage:
 
 # Download file
 $ wget https://github.com/NodeOS/NodeOS/archive/master.zip
+
+# Download file to location
+$ wget https://github.com/NodeOS/NodeOS/archive/master.zip -d path/to/here/
 ```
 
 ## License: MIT

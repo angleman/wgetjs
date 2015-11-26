@@ -62,11 +62,24 @@ if (
 ) {
     console.log(pack.version);
 } else if (argv.length) {
-    console.log("Downloading...");
-    wget(argv[0], callback);
+    var destinationIndex = argv.indexOf('--destination') + argv.indexOf('-d') + 2;
+
+    var args = {};
+    if(destinationIndex){
+      args.dest = argv[destinationIndex];
+      argv.splice(destinationIndex-1,2);
+    }
+    args.url = firstNonFlag(argv);
+    if(args.url.length > 0){
+      console.log("Downloading...");
+      wget(args, callback);
+    }else{
+      console.log(help());
+    }
 } else {
     console.log(help());
 }
+
 function callback(error, response, body){
   if(error){
     console.log('--- error:');
@@ -74,4 +87,13 @@ function callback(error, response, body){
   }else{
     console.log('Done!');
   }
+}
+
+function firstNonFlag(args){
+  for(var i = 0; i < args.length; i++){
+    if(args[i].charAt(0) != '-'){
+      return args[i];
+    }
+  }
+  return "";
 }
