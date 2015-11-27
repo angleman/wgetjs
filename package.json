@@ -1,6 +1,6 @@
 {
-  "name": "wgetjs",
-  "version": "0.3.6",
+  "name": "node-wget",
+  "version": "0.4.0",
   "description": "Ultra simple async retrieval of remote files over http or https",
   "main": "wget.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angleman/wgetjs.git"
+    "url": "https://github.com/tylerl0706/wgetjs.git"
   },
   "keywords": [
     "curl",
@@ -19,10 +19,10 @@
     "http",
     "https"
   ],
-  "author": "angleman",
+  "author": "tylerl0706",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angleman/wgetjs/issues"
+    "url": "https://github.com/tylerl0706/wgetjs/issues"
   },
   "engines": {
     "node": ">=0.8.6"

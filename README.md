@@ -1,5 +1,5 @@
 # wgetjs [![NPM version](https://badge.fury.io/js/wgetjs.png?branch=master)](http://badge.fury.io/js/wgetjs) [![Build Status](https://travis-ci.org/angleman/wgetjs.png?branch=master)](https://travis-ci.org/angleman/wgetjs) [![Dependency Status](https://gemnasium.com/angleman/wgetjs.png?branch=master)](https://gemnasium.com/angleman/wgetjs) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](#licensemit)
-Ultra simple async retrieval of remote files over http or https
+Ultra simple async retrieval of remote files over http or https inspired by wgetjs
 
 ## Install
 
