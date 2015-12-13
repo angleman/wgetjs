@@ -4,7 +4,7 @@ Ultra simple async retrieval of remote files over http or https inspired by wget
 ## Install
 
 ```
-npm install wgetjs
+npm install node-wget
 ```
 
 ## Usage
