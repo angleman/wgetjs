@@ -10,7 +10,7 @@ npm install wgetjs
 ## Usage
 
 ```javascript
-var wget = require('wgetjs');
+var wget = require('node-wget');
 
 wget(url);
 
@@ -24,7 +24,7 @@ wget({url: url, dry: true}); // dry run, nothing loaded, callback passing parsed
 ## Examples
 
 ```javascript
-var wget = require('wgetjs');
+var wget = require('node-wget');
 
 wget('https://raw.github.com/angleman/wgetjs/master/angleman.png');   // angleman.png saved to current folder
 
@@ -63,7 +63,7 @@ wget({
 Install:
 
 ```bash
-$ npm install -g wgetjs
+$ npm install -g node-wget
 ```
 
 Use:
