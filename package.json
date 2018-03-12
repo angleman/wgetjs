@@ -31,14 +31,14 @@
     "wget": "cli.js"
   },
   "dependencies": {
-    "request": "~2.27.0"
+    "request": "~2.85.0"
   },
   "devDependencies": {
-    "license-md": "~0.2.5",
-    "grunt": "~0.4.1",
-    "grunt-bump": "~0.0.11",
-    "grunt-license": "~0.1.4",
-    "mocha": "~1.12.0",
-    "should": "~1.2.2"
+    "license-md": "~0.3.6",
+    "grunt": "~1.0.2",
+    "grunt-bump": "~0.8.0",
+    "grunt-license": "~0.1.5",
+    "mocha": "~5.0.4",
+    "should": "~13.2.1"
   }
 }
