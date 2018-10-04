@@ -1,6 +1,6 @@
 {
   "name": "node-wget",
-  "version": "0.4.0",
+  "version": "0.4.3",
   "description": "Ultra simple async retrieval of remote files over http or https",
   "main": "wget.js",
   "scripts": {
