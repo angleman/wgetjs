@@ -1,6 +1,6 @@
 {
-  "name": "wgetjs",
-  "version": "0.3.6",
+  "name": "node-wget",
+  "version": "0.4.3",
   "description": "Ultra simple async retrieval of remote files over http or https",
   "main": "wget.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angleman/wgetjs.git"
+    "url": "https://github.com/tylerl0706/wgetjs.git"
   },
   "keywords": [
     "curl",
@@ -19,23 +19,26 @@
     "http",
     "https"
   ],
-  "author": "angleman",
+  "author": "tylerl0706",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angleman/wgetjs/issues"
+    "url": "https://github.com/tylerl0706/wgetjs/issues"
   },
   "engines": {
     "node": ">=0.8.6"
   },
+  "bin": {
+    "wget": "cli.js"
+  },
   "dependencies": {
-    "request": "~2.27.0"
+    "request": "~2.85.0"
   },
   "devDependencies": {
-    "license-md": "~0.2.5",
-    "grunt": "~0.4.1",
-    "grunt-bump": "~0.0.11",
-    "grunt-license": "~0.1.4",
-    "mocha": "~1.12.0",
-    "should": "~1.2.2"
+    "license-md": "~0.3.6",
+    "grunt": "~1.0.2",
+    "grunt-bump": "~0.8.0",
+    "grunt-license": "~0.1.5",
+    "mocha": "~5.0.4",
+    "should": "~13.2.1"
   }
 }
